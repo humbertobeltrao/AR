@@ -1,0 +1,22 @@
+<html>
+<meta charset="UTF-8">
+<script src="https://aframe.io/releases/0.6.1/aframe.min.js"></script>
+<script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.5.0/aframe/build/aframe-ar.js"></script>
+<a-scene embedded arjs='trackingMethod: best;'>
+<a-anchor hit-testing-enabled='true'>
+  <a-sphere position="1.5 1.5 -1.5" color="red" radius="1.0">
+    <a-animation
+      attribute="color"
+      dur="10000"
+      from="red"
+      to="white"
+      repeat="indefinite"></a-animation>
+  </a-sphere>
+  <a-plane src="https://github.com/humbertobeltrao/AR/blob/assets/marker.png" height="3" width="3" color="black" position="-2 1 0"></a-plane>
+  <a-text value="Humberto Beltrao da Cunha Junior\n\nMy first web AR application" position="-3.5 2 0" height="3"
+  width="3" color="white"></a-text>
+  <a-image href="https://github.com/humbertobeltrao/AR/blob/assets/marker.png" width="1" height="1.5" position="-1 0.5 0"></a-image>
+
+
+</a-anchor>
+</html>
